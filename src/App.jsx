@@ -1,4 +1,6 @@
 import './App.css';
+import iconMusic from '../public/images/icon-music.svg';
+import hero from '../public/images/illustration-hero.svg';
 import { Card, Typography, Button } from 'antd';
 const { Meta } = Card;
 const { Text, Link } = Typography;
@@ -9,9 +11,7 @@ function App() {
 			style={{
 				width: 300,
 			}}
-			cover={
-				<img alt="people" src="/public/images/illustration-hero.svg " />
-			}
+			cover={<img alt="hero" src={hero} />}
 		>
 			<Meta
 				title={
@@ -29,7 +29,7 @@ function App() {
 				}}
 			/>
 			<div className="annual-plan">
-				<img src="/public/images/icon-music.svg" alt="music" />
+				<img src={iconMusic} alt="music" />
 				<div className="price">
 					<Text style={{ fontSize: '13px' }}>Annual Plan</Text>
 					<Text>$59.99/year</Text>
